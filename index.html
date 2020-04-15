@@ -65,9 +65,10 @@ function setup() {
 	slider.position(width/2,0);
 	slider.input(sliderChanged);
 	
-	fill(255);
+	fill(0);
 	textSize(12);
 	text(dates[slider.value()],width/2,45);
+	fill(255);
 	
 	drawMap();
 	drawPoints(table.getColumn(dates[slider.value()]));
@@ -90,9 +91,10 @@ function sliderChanged() {
 	drawMap();
 	drawPoints(table.getColumn(dates[slider.value()]));
 	
-	fill(255);
+	fill(0);
 	textSize(12);
 	text(dates[slider.value()],width/2,45);
+	fill(255);
 }
 
 function drawMap() {
